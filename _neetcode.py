@@ -107,3 +107,17 @@ for i in range(rows):
 prime_numbers = [2, 3, 5, 7]
 # reverse the order of list elements
 print(prime_numbers.reverse())
+
+
+def caesarCipher(s, k):
+    # Write your code here
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
+    result = ""
+    for idx in s:
+        if idx not in alphabet:
+            continue
+        result += alphabet[(alphabet.index(idx) + k) % 26]
+    return result
+
+
+print(caesarCipher("wxyz", 4))
