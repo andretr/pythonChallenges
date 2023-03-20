@@ -1,5 +1,5 @@
-from flask import Flask, request, jsonify
-from model import FamilyMember
+from flask import Flask, jsonify
+from _flask_crud.model import FamilyMember
 
 app = Flask(__name__)
 
